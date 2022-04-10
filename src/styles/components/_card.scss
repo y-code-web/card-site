@@ -1,0 +1,27 @@
+.card {
+  &--contact {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    h4 {
+      color: var(--font-color-red);
+      font-weight: 700;
+      margin-bottom: 20 / $h4Value + em;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      color: var(--font-color-light);
+      text-decoration: none;
+      margin-bottom: 1em;
+      .svg-icon {
+        font-size: var(--h4);
+        margin-right: .4em;
+        color: var(--font-color-gray);
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

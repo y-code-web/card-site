@@ -1,0 +1,53 @@
+
+// vendors css
+@import 'vendors';
+
+// fonts
+@import 'font-face';
+
+// variables
+@import 'vars';
+
+// Mixin helpers
+@import 'mixins/*.scss';
+
+// root app
+@import 'root';
+
+// animations
+// @import 'animations/*.scss';
+
+// Helpers
+@import 'extends/*.scss';
+
+// Forms
+@import 'components/form/*.scss';
+
+// Components
+@import 'components';
+
+// header
+// Each header unique(not extandables)
+@import 'header/*.scss';
+
+// form
+// Each header unique(not extandables)
+@import 'form/*.scss';
+
+// form
+// Each header unique(not extandables)
+@import 'form/validation/*.scss';
+
+// Sections
+// Each sections unique(not extandables)
+@import 'section/*.scss';
+
+// footer
+// Each footers unique(not extandables)
+@import 'footer/*.scss';
+
+// Layouts
+@import 'layout/*.scss';
+
+// Layouts
+@import 'loader/*.scss';

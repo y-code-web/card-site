@@ -1,0 +1,34 @@
+.section {
+  &--contacts {
+    .section__background-secondary {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      width: 490 / $fontSizeRelative + em;
+      height: 90%;
+      background-image: url('../img/bg-page-contacts.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+      @include media(d, $xxl) {
+        right: 5%;
+      }
+      @include media(d, $lg) {
+        right: -100px;
+      }
+    }
+    .section__content {
+      margin-bottom: 80 / $fontSizeRelative + em;
+      p {
+        max-width: 550 / $fontSizeRelative + em;
+        color: var(--font-color-gray);
+      }
+    }
+    .card--contact {
+      padding-right: 2em;
+      // padding-left: 2em;
+      // padding-right: 2em;
+    }
+  }
+}

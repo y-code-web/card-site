@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./src/partials/head.html')
+    <body>
+        <div class="layout layout--guide">
+            <div class="layout__sidebar">
+                <div>
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white">
+                        <span class="fs-4">Главная</span>
+                    </a>
+                    <hr />
+                    @@include('./src/partials/guide/guide-nav.html')
+                </div>
+            </div>
+            @@include('./src/partials/guide/guide-content.html')
+        </div>
+
+        @@include('./src/partials/scripts.html')
+    </body>
+</html>

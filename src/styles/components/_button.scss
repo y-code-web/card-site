@@ -1,0 +1,28 @@
+.button {
+  &--base {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200 / $fontSizeRelative + em;
+    min-height: 55 / $h5Value + em;
+    padding: 10 / $h5Value + em 15 / $h5Value + em;
+
+    font-size: var(--h5);
+    color: var(--font-color-light);
+    text-decoration: none;
+    text-align: center;
+
+    // background-color: var(--background-color-red);
+    // box-shadow: 15px -10px 0 0 var(--background-color-red);
+    background-image: url('../img/bg-button.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    transition: linear .1s;
+    &:hover {
+      color: var(--font-color-light);
+      transform: scale(.95);
+    }
+  }
+}

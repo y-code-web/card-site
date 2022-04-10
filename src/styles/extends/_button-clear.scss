@@ -1,0 +1,12 @@
+.button-clear {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  &:focus {
+    outline: none !important;
+  }
+}

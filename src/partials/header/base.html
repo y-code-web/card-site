@@ -1,0 +1,53 @@
+<header
+  class="header header--base"
+  id="header"
+  data-element="header"
+  data-animation-in="fadeInDown"
+  data-animation-out="fadeOutUp"
+>
+  <div class="container-xxl">
+    <div class="row row-cols-auto align-items-center">
+      <div class="header__logo col">
+        <a
+          class="logo logo--base"
+          data-element="switch-slide"
+          href="#main"
+        >
+          <span>Y.code.</span>web
+        </a>
+      </div>
+      <div class="header__nav col">
+        <div
+          class="header__toggle-close"
+          data-element="toggle"
+          data-target="header"
+          data-toggle-class="menu-opened"
+        >
+          <svg class='svg-icon'>
+            <use xlink:href='img/svgSprite.svg#icon-close'></use>
+          </svg>
+        </div>
+        <nav class="nav nav--menu">
+          <ul>
+            <li><a data-element="switch-slide" data-target-index="1" href="#about">О себе</a></li>
+            <li><a data-element="switch-slide" data-target-index="2" href="#skills">Навыки</a></li>
+            <li><a data-element="switch-slide" data-target-index="3" href="#portfolio">Мои работы</a></li>
+            <li><a data-element="switch-slide" data-target-index="4" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div
+        class="col header__toggle-col"
+        data-element="toggle"
+        data-target="header"
+        data-toggle-class="menu-opened"
+      >
+        <div class="header__toggle">
+          <svg class='svg-icon'>
+            <use xlink:href='img/svgSprite.svg#icon-menu'></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

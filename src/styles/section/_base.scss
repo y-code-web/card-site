@@ -1,0 +1,41 @@
+.section {
+  position: absolute;
+  top: 150 / $fontSizeRelative + em;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+
+  --animate-duration: 800ms;
+
+  @include media(d, $xxl) {
+    top: 80 / $fontSizeRelative + em;
+  }
+  &.show {
+    display: flex;
+  }
+}
+
+.section__background-secondary {
+  @include media(d, $md) {
+    display: none;
+  }
+}
+.section__in {
+  @extend .scroll-custom--base;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 50 / $fontSizeRelative + em 0;
+}
+
+

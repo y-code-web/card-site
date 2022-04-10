@@ -1,0 +1,36 @@
+<div
+    class="modal modal-base fade"
+    id="modal-request"
+    tabindex="-1"
+    data-bs-focus="false"
+    aria-labelledby="requestModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button
+          type="button"
+          class="button button--modal-close btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <form class="form form--request">
+            <div class="form__head">
+                <h3>Заполните заявку</h3>
+                <p>Мы перезвоним вам в течении 10 минут</p>
+            </div>
+            <div class="form__group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form__group">
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone" required>
+            </div>
+            <div class="form__group">
+                <button class="button button--third" type="submit">Оставить заявку</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>

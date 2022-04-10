@@ -1,0 +1,20 @@
+.logo {
+  &--base {
+    display: inline-block;
+    font-size: var(--h3);
+    color: var(--font-color-light);
+    text-decoration: none;
+    font-weight: 700;
+    transform: rotate(-5deg);
+    span {
+      color: var(--font-color-red);
+    }
+    &:hover {
+      text-decoration: none;
+      color: var(--font-color-light);
+    }
+    &.animate__animated {
+      --animate-duration: 2s;
+    }
+  }
+}

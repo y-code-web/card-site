@@ -1,0 +1,113 @@
+.header {
+  &--base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    // right: 0;
+
+    padding-top: 70 / $fontSizeRelative + em;
+    padding-bottom: 30 / $fontSizeRelative + em;
+    height: 150 / $fontSizeRelative + em;
+
+    // background-color: var(--background-color-blue);
+    display: none;
+    @include media(d, $xxl) {
+      height: 80 / $fontSizeRelative + em;
+      padding-top: 15 / $fontSizeRelative + em;
+    }
+    .header__logo {
+      flex-shrink: 0;
+      margin-right: 30 / $fontSizeRelative + em;
+      @include media(d, $xxl) {
+        padding-top: 5 / $fontSizeRelative + em;
+      }
+    }
+    .header__nav {
+      position: relative;
+      top: 3px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      @include media(d, $xxl) {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        background-color: var(--background-color-blue-secondary);
+
+        transform: translate(-100%, 0);
+        // transition: .2s linear .4s;
+      }
+    }
+    .nav--menu {
+      @include media(d, $xxl) {
+        width: 280 / $fontSizeRelative + em;
+        height: 100%;
+        flex-direction: column;
+        padding: 50 / $fontSizeRelative + em 15 / $fontSizeRelative + em;
+  
+        background-color: var(--background-color-light);
+        transform: translate(-100%, 0);
+        // transition: .2s linear .2s;
+        ul {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        li {
+          margin: 0 0 20 / $fontSizeRelative + em;
+        }
+        a {
+          color: var(--font-color-blue);
+          font-size: var(--h4);
+        }
+      }
+    }
+    .header__toggle-close {
+      position: absolute;
+      top: -1.5em;
+      // top: .5em;
+      right: .5em;
+
+      font-size: var(--h3);
+      cursor: pointer;
+      // transition: linear .2s;
+      @include media(m, $xxl) {
+        display: none;
+      }
+    }
+    .header__toggle {
+      font-size: var(--h3);
+      // padding: 10 / $h4Value + em;
+      cursor: pointer;
+    }
+    .header__toggle-col {
+      margin-left: auto;
+      @include media(m, $xxl) {
+        display: none;
+      }
+    }
+    &.menu-opened {
+      .header__nav {
+        transform: translate(0, 0);
+        transition: linear .2s;
+      }
+      .nav--menu {
+        transform: translate(0, 0);
+        transition: .2s linear .2s;
+      }
+      .header__toggle-close {
+        top: .5em;
+        transition: .2s linear .4s;
+      }
+    }
+    &.show {
+      display: block;
+    }
+  }
+}

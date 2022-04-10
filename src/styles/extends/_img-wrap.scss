@@ -1,0 +1,11 @@
+.img-wrap {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	img {
+		flex-shrink: 0;
+		max-height: 100%;
+	}
+}

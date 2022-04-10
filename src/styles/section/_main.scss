@@ -1,0 +1,42 @@
+.section {
+  &--main {
+    .section__content {
+      color: var(--font-color-gray);
+      font-size: var(--h4);
+      line-height: 1.16;
+      h1 {
+        margin-bottom: 60 / $h1Value + em;
+        color: var(--font-color-light);
+        @include media(d, $xxl) {
+          font-size: var(--h2);
+        }
+        @include media(d, $sm) {
+          font-size: var(--h3);
+          line-height: 1.3;
+        }
+      }
+      p {
+        max-width: 600 / $fontSizeRelative + em;
+        margin-bottom: 60 / $h4Value + em;
+        @include media(d, $lg) {
+          max-width: 500 / $fontSizeRelative + em;
+        }
+      }
+    }    
+    .section__background-secondary {
+      position: absolute;
+      bottom: 0;
+      right: 12%;
+      width: 450 / $fontSizeRelative + em;
+      // height: 794 / $fontSizeRelative + em;
+      height: 90%;
+      background-image: url('../img/bg-page.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+      @include media(d, $xxl) {
+        right: 0;
+      }
+    }
+  }
+}

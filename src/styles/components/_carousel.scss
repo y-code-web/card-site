@@ -1,0 +1,117 @@
+.carousel {
+  &--base {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // padding-top: 117 / $fontSizeRelative + em;
+    .swiper-wrapper {
+
+    }
+    
+  }
+  &--gallery {
+    .swiper-slide {
+      position: relative;
+      border-radius: 20 / $fontSizeRelative + em;
+      background-color: var(--background-color-blue);
+      @include media(d, $md) {
+        // border: 1px solid var(--border-color-red);
+      }
+      a {
+        display: block;
+        color: var(--font-color-light);
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .carousel__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        padding: 20 / $fontSizeRelative + em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        color: var(--font-color-light);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: linear .2s;
+        background-color: var(--background-color-blue-third);
+        @include media(d, $md) {
+          position: static;
+          border: 1px solid var(--border-color-light-secondary);
+          border-top: none;
+          border-radius: 0 0 20 / $fontSizeRelative + em 20 / $fontSizeRelative + em;
+
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .carousel__content-in {
+        max-width: 300 / $fontSizeRelative + em;
+        padding: 15 / $fontSizeRelative + em;
+        transform: translate(0, 100%);
+        transition: .2s linear .2s;
+        @include media(d, $md) {
+          transform: translate(0, 0);
+        }
+      }
+      h3 {
+        font-weight: 700;
+      }
+      strong {
+        color: var(--font-color-red);
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        strong {
+          display: block;
+        }
+        li {
+          margin-bottom: 10 / $fontSizeRelative + em;
+        }
+      }
+      &:hover {
+        .carousel__content {
+          opacity: 1;
+          visibility: visible;
+        }
+        .carousel__content-in {
+          transform: translate(0, 0);
+        }
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--font-color-light);
+      @include media(d, $md) {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -100 / $fontSizeRelative + em;
+    }
+    .swiper-button-next {
+      right: -100 / $fontSizeRelative + em;
+    }
+  }
+}

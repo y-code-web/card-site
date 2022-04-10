@@ -1,0 +1,37 @@
+.section {
+  &--skills {
+    .section__background-secondary {
+      position: absolute;
+      bottom: 15%;
+      right: 5%;
+      // transform: translate(0, -50%);
+
+      width: 612 / $fontSizeRelative + em;
+      height: 70%;
+      background-image: url('../img/bg-page-skills.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+      @include media(d, $xxl) {
+        right: -10%;
+      }
+      @include media(d, $lg) {
+        right: -200px;
+      }
+    }
+    .section__content {
+      max-width: 60%;
+      // padding-left: 100 / $fontSizeRelative + em;
+      @include media(d, $xxl) {
+        padding-left: 100 / $fontSizeRelative + em;
+        // padding-left: 100 / $fontSizeRelative + em;
+      }
+      @include media(d, $lg) {
+        padding: 0;
+      }
+      @include media(d, $md) {
+        max-width: none;
+      }
+    }
+  }
+}

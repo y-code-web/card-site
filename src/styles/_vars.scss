@@ -1,0 +1,93 @@
+// media queries points
+// ====================
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+// ====================
+// ====================
+
+// Font size calculations
+// ====================
+$fontSizeRelative: 18;
+
+$h1Value: 96;
+$h2Value: 72;
+$h3Value: 36;
+$h4Value: 24;
+$h5Value: 20;
+$textValue: 18;
+
+$h1: $h1Value / #{$fontSizeRelative}rem;
+$h2: $h2Value / #{$fontSizeRelative}rem;
+$h3: $h3Value / #{$fontSizeRelative}rem;
+$h4: $h4Value / #{$fontSizeRelative}rem;
+$h5: $h5Value / #{$fontSizeRelative}rem;
+$text: $textValue / #{$fontSizeRelative}rem;
+// ====================
+// ====================
+
+// colors
+// ====================
+$colorLight: #FBE8D3;
+$colorLightSecondary: rgba(#FBE8D3, .5);
+$colorGray: #928A97;
+$colorRed: #FF7069;
+$colorBlue: #283C63;
+$colorBlueSecondary: rgba(#283C63, .9);
+$colorBlueThird: rgba(#283C63, .7);
+// ====================
+// ====================
+
+
+
+// css variables
+// ====================
+:root {
+	--color-light: #{$colorLight};
+	--color-light-secondary: #{$colorLightSecondary};
+	--color-gray: #{$colorGray};
+	--color-red: #{$colorRed};
+	--color-blue: #{$colorBlue};
+	--color-blue-secondary: #{$colorBlueSecondary};
+	--color-blue-third: #{$colorBlueThird};
+	
+	--font-1: 'Work Sans';
+
+	--default-font: var(--font-1);
+	--default-font-color: var(--color-light);
+	--default-link-color: var(--color-light);
+	--default-background-color: var(--color-light);
+	--default-border-color: var(--color-gray);
+	--default-font-size: 1rem;
+
+	--font-color-light: var(--color-light);
+	--font-color-gray: var(--color-gray);
+	--font-color-red: var(--color-red);
+	--font-color-blue: var(--color-blue);
+
+	--background-color-blue: var(--color-blue);
+	--background-color-blue-secondary: var(--color-blue-secondary);
+	--background-color-blue-third: var(--color-blue-third);
+	--background-color-red: var(--color-red);
+	--background-color-light: var(--color-light);
+	--background-color-ligh-secondary: var(--color-light-secondary);
+
+	--border-color-gray: var(--color-gray);
+	--border-color-red: var(--color-red);
+	--border-color-light: var(--color-light);
+	--border-color-light-secondary: var(--color-light-secondary);
+	
+	--h1: #{$h1};
+	--h2: #{$h2};
+	--h3: #{$h3};
+	--h4: #{$h4};
+	--h5: #{$h5};
+	--text: #{$text};
+
+  --animate-duration: 600ms;
+}
+// ====================
+// ====================

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include("./src/partials/head.html")
+  <title>y.code.web</title>
+  <body>
+    @@include("./src/partials/loader/base.html")
+    <div
+      class="layout layout--base"
+      id="app"
+      data-animation-out="fadeOutUp"
+      data-animation-in="fadeInUp"
+    >
+        @@include("./src/partials/header/base.html")
+        <div
+          class="layout__background"
+          data-element="lines"
+          data-animation-in="fadeInUp"
+          data-animation-out="fadeOutDown"
+        >&nbsp;</div>
+        <div class="layout__content">
+          @@include("./src/partials/section/main.html")
+          @@include("./src/partials/section/about.html")
+          @@include("./src/partials/section/skills.html")
+          @@include("./src/partials/section/portfolio.html")
+          @@include("./src/partials/section/contacts.html")
+        </div>
+        @@include("./src/partials/footer/base.html")
+      </div>
+    </div>
+    @@include('./src/partials/scripts.html')
+  </body>
+</html>

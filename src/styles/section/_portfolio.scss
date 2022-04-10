@@ -1,0 +1,27 @@
+.section {
+  &--portfolio {
+    .section__content {
+      // max-width: 800 / $fontSizeRelative + em;
+      // height: 320 / $fontSizeRelative + em;
+      a {
+        color: var(--font-color-red);
+      }
+    }
+    h2 {
+      margin-bottom: 10 / $h2Value + em;
+      @include media(d, $lg) {
+        // font-size: var(--h3);
+        font-size: 40 / $fontSizeRelative + em;
+      }
+    }
+    .carousel--gallery {
+      width: 640 / $fontSizeRelative + em;
+      // height: 360 / $fontSizeRelative + em;
+      @include media(d, $md) {
+        width: 90%;
+
+      }
+      // padding-bottom: 100 / $fontSizeRelative + em;
+    }
+  }
+}

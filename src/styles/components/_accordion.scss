@@ -1,0 +1,48 @@
+.accordion {
+  &--base {
+    .accordion-item {
+      background: none;
+      border: none;
+      // margin-bottom: 15 / $fontSizeRelative + em;
+    }
+    .accordion-button {
+      padding: 10 / $fontSizeRelative + em 0;
+      background: none;
+      box-shadow: none;
+      width: auto;
+      display: inline-flex;
+
+      font-size: var(--h4);
+      color: var(--font-color-red);
+      font-weight: 700;
+      &:after {
+        display: none;
+      }
+      .svg-icon {
+        margin-left: 24 / $h4Value + em;
+      }
+      &:not(.collapsed) {
+        .svg-icon {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    .accordion-body {
+      // padding: 15 / $fontSizeRelative + em 0 0;
+      padding: 0;
+      color: var(--font-color-light);
+      font-size: var(--text);
+      span, a {
+        color: var(--font-color-red);
+      }
+    }
+    ul {
+      margin-bottom: 0;
+    }
+    .accordion__avatar {
+      width: 200 / $fontSizeRelative + em;
+      height: 200 / $fontSizeRelative + em;
+      border-radius: 50%;
+    }
+  }
+}
