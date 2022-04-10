@@ -1,0 +1,152 @@
+{
+	"name": "gulpbychprofy",
+	"description": "Frontend development",
+	"author": "chprofY",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreyalexeich/gulppack-pug.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"serve": "gulp --development",
+		"build": "gulp build --production"
+	},
+	"dependencies": {
+		"@ckeditor/ckeditor5-build-classic": "^28.0.0",
+		"@popperjs/core": "^2.9.2",
+		"animate.css": "^4.1.1",
+		"bootstrap": "^5.0.1",
+		"bootstrap-datepicker": "^1.9.0",
+		"chart.js": "^3.5.1",
+		"choices.js": "^9.0.1",
+		"inputmask": "^5.0.5",
+		"ion-rangeslider": "^2.3.1",
+		"jquery": "^3.6.0",
+		"jquery.rateit": "^1.1.5",
+		"magnific-popup": "^1.1.0",
+		"select2": "^4.1.0-rc.0",
+		"sortablejs": "^1.14.0",
+		"svg4everybody": "^2.1.9",
+		"swiper": "^7.0.0",
+		"wow.js": "^1.2.2"
+	},
+	"overrides": {
+		"jquery": {
+			"ignore": false,
+			"main": "dist/jquery.min.js"
+		},
+		"animate.css": {
+			"ignore": true
+		},
+		"wow.js": {
+			"ignore": true,
+			"main": "dist/wow.js"
+		},
+		"svg4everybody": {
+			"ignore": false,
+			"main": "dist/svg4everybody.min.js"
+		},
+		"swiper": {
+			"ignore": false,
+			"main": "swiper-bundle.min.js"
+		},
+		"choices.js": {
+			"ignore": true
+		},
+		"inputmask": {
+			"ignore": true,
+			"main": "dist/jquery.inputmask.js"
+		},
+		"bootstrap": {
+			"ignore": false,
+			"main": "dist/js/bootstrap.bundle.min.js"
+		},
+		"@popperjs/core": {
+			"ignore": true,
+			"main": "dist/umd/popper.min.js"
+		},
+		"select2": {
+			"ignore": true,
+			"main": "dist/js/select2.min.js"
+		},
+		"bootstrap-datepicker": {
+			"ignore": true,
+			"main": [
+				"dist/js/bootstrap-datepicker.min.js",
+				"dist/locales/bootstrap-datepicker.ru.min.js"
+			]
+		},
+		"@ckeditor/ckeditor5-build-classic": {
+			"ignore": true,
+			"main": [
+				"build/ckeditor.js",
+				"build/translations/ru.js"
+			]
+		},
+		"ion-rangeslider": {
+			"ignore": true,
+			"main": [
+				"js/ion.rangeSlider.min.js"
+			]
+		},
+		"magnific-popup": {
+			"ignore": true,
+			"main": [
+				"dist/jquery.magnific-popup.min.js"
+			]
+		},
+		"jquery.rateit": {
+			"ignore": true,
+			"main": [
+				"scripts/jquery.rateit.min.js"
+			]
+		},
+		"chart.js": {
+			"ignore": true,
+			"main": [
+				"dist/chart.min.js"
+			]
+		},
+		"sortablejs": {
+			"ignore": true,
+			"main": [
+				"Sortable.min.js"
+			]
+		}
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.5",
+		"browser-sync": "^2.26.14",
+		"css-mqpacker": "^7.0.0",
+		"del": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-cached": "^1.1.1",
+		"gulp-cheerio": "^1.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-favicons": "^3.0.0",
+		"gulp-file-include": "^2.3.0",
+		"gulp-fonter": "^0.3.0",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-mode": "^1.0.2",
+		"gulp-newer": "^1.4.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^9.0.0",
+		"gulp-rename": "^2.0.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sass-glob": "^1.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-svg-sprite": "^1.5.0",
+		"gulp-svgmin": "^3.0.0",
+		"gulp-terser": "^2.0.1",
+		"gulp-ttf2woff": "^1.1.1",
+		"gulp-ttf2woff2": "^4.0.1",
+		"imagemin-jpeg-recompress": "^7.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"imagemin-svgo": "^9.0.0",
+		"npmfiles": "^0.1.3",
+		"postcss": "^8.2.8",
+		"sort-css-media-queries": "^1.5.4"
+	}
+}
