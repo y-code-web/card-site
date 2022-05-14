@@ -22,13 +22,13 @@
       width: 100%;
       height: 45%;
     
-      background-image: url('../img/bg-section.svg');
+      // background-image: url('../img/bg-section.svg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 0;
       display: none;
       &.animate__pulse {
-        --animate-duration: 4s;
+        --animate-duration: 0s;
       }
       @include media(d, $md) {
         display: none;
